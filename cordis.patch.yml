@@ -1,0 +1,4 @@
+# 市场部体检：Host 半边（五个体检 skill + 五关总体检的提供方、体检档案页面和接口）。浏览器半边由 package.json 的 dsh.client 声明加载。
+- insert:
+    - id: pharma-review
+      name: 'dsh-pharma-review'

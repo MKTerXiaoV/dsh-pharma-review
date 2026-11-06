@@ -1,0 +1,62 @@
+{
+  "name": "dsh-pharma-review",
+  "version": "0.1.0",
+  "description": "市场部体检 · DeepSeek Harness 插件：证据、分析、洞察、关键信息、活动五个医药市场体检 skill，加五关总体检和体检档案，改前改后一眼看出过了几关。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "icon": "./icon.png",
+  "files": [
+    "lib",
+    "page",
+    "skills",
+    "own-skills",
+    "locale/*.json",
+    "cordis.patch.yml",
+    "icon.png",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "dsh",
+    "skills",
+    "pharma",
+    "marketing",
+    "review"
+  ],
+  "author": "MKTerXiaoV",
+  "homepage": "https://github.com/MKTerXiaoV/dsh-pharma-review",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MKTerXiaoV/dsh-pharma-review.git"
+  },
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0",
+    "dsh": ">=0.2.1-rc.2 <0.3.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": []
+    }
+  },
+  "peerDependencies": {
+    "react": "^18.2.0 || ^19.0.0"
+  },
+  "scripts": {
+    "vendor": "node tools/vendor-skills.mjs",
+    "test": "node --test test/*.test.mjs"
+  },
+  "license": "MIT"
+}
