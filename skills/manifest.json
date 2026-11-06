@@ -1,7 +1,7 @@
 {
   "$comment": "tools/vendor-skills.mjs 生成。不要手改 skills/ 下的文件：改全家桶仓库后重新运行脚本。",
   "repo": "https://github.com/MKTerXiaoV/pharma-review-skills",
-  "commit": "8754fe4341b2fbb094dc1117819be1b36af220c2",
+  "commit": "e3950f3335b135341bfa27a9af8f11e55755e9b7",
   "skills": [
     {
       "name": "evidence-review",
